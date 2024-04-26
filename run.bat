@@ -12,6 +12,7 @@ echo Запуск Программы
 echo Нажмите q для выхода
 main.py
 pause
+goto end
 exit
 
 :face_gen
@@ -19,6 +20,8 @@ cd filtres
 echo Запуск Программы
 face_gen.py
 pause
+cd ../
+goto end
 exit
 
 :tren
@@ -26,9 +29,12 @@ cd filtres
 echo Запуск Программы
 tren.py
 pause
+cd ../
+goto end
 exit
 
 :end
+cls
 echo Выберите действие:
 echo 1 - Запуск
 echo 2 - Создать пользователя

@@ -42,6 +42,8 @@ try:
         os.rename('filtres/trainer/trainer.yml', 'filtres/trainer/trainer_old.yml')
 except:
     if os.access("filtres/trainer/trainer_old.yml", os.F_OK) == True:
+        print("Файл filtres/trainer/trainer_old.yml будет изменен")
+        os.system("pause")
         os.remove("filtres/trainer/trainer_old.yml")
         os.rename('filtres/trainer/trainer.yml', 'filtres/trainer/trainer_old.yml')
 
